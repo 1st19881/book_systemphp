@@ -27,7 +27,6 @@ $i=1;
             <th width="20%" scope="col">วันเวลา</th>
             <th width="10%" scope="col">ภาพ</th>
             <th width="10%"scope="col">สถานะ</th>
-            <th width="15%"scope="col">#</th>
         </tr>
     </thead>
     <?php while($row_p = mysqli_fetch_array($result)) { ?>
@@ -45,15 +44,12 @@ $i=1;
                  echo "<font style='color:#f0b905;'>รอการยืนยัน</font>"; 
              }
              if($st==2){
-                echo "<font style='color:#green;'>ยืนยันแล้ว</font>"; 
+                echo "<font style='color:green;'>ยืนยันแล้ว</font>"; 
+            }
+            if($st==3){
+                echo "<font style='color:red;'>ยกเลิก</font>"; 
             }
             ?>
-        </td>
-        <td>
-            <div class="d-flex">
-                <a href="history.php?act=detail&book_id=<?php echo $row_p['book_id']; ?>"
-                    class="btn btn-success btn-flat">ดูรายละเอียด</a>
-            </div>
         </td>
     </tr>
 

@@ -9,16 +9,6 @@
         </div>
 
         <div class="form-group">
-            <div class="col-sm-2" align="">level</div>
-            <div class="col-sm-12" align="left">
-            <select class="form-control" id="exampleFormControlSelect1" name="member_type">
-            <option value="member">สมาชิก</option>
-            <option value="admin">ผู้ดูแลระบบ</option>
-            </select>
-            </div>
-        </div>
-
-        <div class="form-group">
             <div class="col-sm-2" align=""> username</div>
             <div class="col-sm-12" align="left">
                 <input name="username" type="text" required class="form-control" />

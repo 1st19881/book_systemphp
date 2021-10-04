@@ -12,12 +12,17 @@ $menu = "index"
     ?>
         <br>
         <br>
-        <?php  $act = (isset($_GET['act']) ? $_GET['act'] : '');
-            if($act=="show_type"){
-            include('show_type.php');
-            }else{
-            include('showbook.php');        
-            }
+        <?php  
+        $act = (isset($_GET['act']) ? $_GET['act'] : '');
+        $s = (isset($_GET['s']) ? $_GET['s'] : '');
+        if($act=="show_type"){
+        include('show_type.php');
+        }elseif($s!=""){
+        include('search.php');   
+        }
+        else{
+        include('showbook.php');        
+        }
         ?>
         <br>
         <br>

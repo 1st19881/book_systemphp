@@ -45,6 +45,9 @@ $i=1;
              if($st==2){
                 echo "<font style='color:#green;'>สำเร็จ</font>"; 
             }
+            if($st==3){
+                echo "<font style='color:red;'>ยกเลิก</font>"; 
+            }
             ?>
         </td>
     </tr>

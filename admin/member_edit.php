@@ -19,16 +19,6 @@ $row_mb = mysqli_fetch_array($result_mb);
             </div>
         </div>
 
-        <div class="form-group">
-            <div class="col-sm-2" align="">level</div>
-            <div class="col-sm-12" align="left">
-            <select class="form-control" id="exampleFormControlSelect1" name="member_type">
-            <option value=""><?php echo $row_mb['member_type'];?></option>
-            <option value="member">member</option>
-            <option value="admin">admin</option>
-            </select>
-            </div>
-        </div>
 
         <div class="form-group">
             <div class="col-sm-2" align=""> username</div>

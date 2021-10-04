@@ -29,8 +29,8 @@ $rs_t = mysqli_query($conn,$sql_t);
   </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"  name="" style="border-radius:0;">
-      <button class="btn btn-outline-success btn-flat my-2 my-sm-0" type="submit">Search</button>
+      <input class="form-control mr-sm-2" type="search" placeholder="ค้นหา" aria-label="Search"  name="s" style="border-radius:0;">
+      <button class="btn btn-outline-success btn-flat my-2 my-sm-0" type="submit">ค้นหา</button>
     </form>
   </div>
 </nav>

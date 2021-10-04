@@ -9,7 +9,6 @@ include('condb.php');
     $phone = $_POST['phone'];
     $title = $_POST['title'];
     $email = $_POST['email'];
-    $member_type = $_POST['member_type'];
 
 	// echo '<pre>';
 	// print_r($_POST);
@@ -17,7 +16,7 @@ include('condb.php');
 	// exit;
 
 
-    $sql = "INSERT INTO  member(phone,title,name,lastname,email,username,password,member_type)VALUES('$phone','$title','$name','$lastname','$email','$username','$password','$member_type')";
+    $sql = "INSERT INTO  member(phone,title,name,lastname,email,username,password)VALUES('$phone','$title','$name','$lastname','$email','$username','$password')";
     
     $result = mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error());
 	

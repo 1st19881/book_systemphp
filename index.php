@@ -12,10 +12,13 @@ $menu = "index"
     ?>
         <?php
             $act = (isset($_GET['act']) ? $_GET['act'] : '');
+            $s = (isset($_GET['s']) ? $_GET['s'] : '');
             if($act=="login"){
                 include('login.php');
             }elseif($act=="loginadmin"){
-                include('loginadmin.php');    
+                include('loginadmin.php'); 
+            }elseif($s!=""){
+                include('search.php');   
             }elseif($act=="regis"){
                 include('register.php');
             }elseif($act=="show_type"){

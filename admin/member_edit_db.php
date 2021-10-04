@@ -8,7 +8,6 @@ $name =$_POST['name'];
 $lastname =$_POST['lastname'];
 $phone =$_POST['phone'];
 $email =$_POST['email'];
-$member_type =$_POST['member_type'];
 
 
 $sql_edit="UPDATE member SET 
@@ -17,9 +16,7 @@ password = '$password',
 name = '$name',
 lastname = '$lastname',
 phone = '$phone',
-email = '$email',
-member_type = '$member_type'
-
+email = '$email'
 WHERE member_id='$member_id'";
 $result_edit = mysqli_query($conn,$sql_edit);
 

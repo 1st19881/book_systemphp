@@ -44,15 +44,20 @@ $i=1;
             if($st==2){
                echo "<font style='color:#green;' class='bg-success p-1'>ยืนยันแล้ว</font>"; 
            }
+           if($st==3){
+            echo "<font style='color:red;'>ยกเลิก</font>"; 
+        }
             ?>
         </td>
         <td>
-            <div class="d-flex">
+        <div class="d-flex">
                 <?php 
               $bt_st = $row_p['status_book']; 
               if($bt_st==1){?>
                 <a href="order_db.php?booking_id=<?php echo $row_p['booking_id']; ?>"
-                    class="btn btn-success btn-flat">ยืนยัน</a>
+                    class="btn btn-success btn-flat"  onclick="return confirm('ยันยัน')">ยืนยัน</a>
+                    <a href="order_cancel_db.php?booking_id=<?php echo $row_p['booking_id']; ?>&book_id=<?php echo $row_p['book_id']; ?>"
+                    class="btn btn-danger btn-flat" onclick="return confirm('ยกเลิก')">ยกเลิก</a>
                 <?php   }else{
                   echo "<font style='color:green;'>เรียบร้อย</font>"  ;
                 }?>

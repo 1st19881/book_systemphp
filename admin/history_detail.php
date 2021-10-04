@@ -43,7 +43,10 @@ $i=1;
                  echo "<font style='color:#f0b905;'>รอการยืนยัน</font>"; 
              }
              if($st==2){
-                echo "<font style='color:#green;'>สำเร็จ</font>"; 
+                echo "<font style='color:green;'>สำเร็จ</font>"; 
+            }
+            if($st==3){
+                echo "<font style='color:red;'>ยกเลิก</font>"; 
             }
             ?>
         </td>
