@@ -6,7 +6,7 @@ $booktype_id = $_GET['booktype_id'];
 
 $query1 = "SELECT b.*,bt.* FROM book as b
 INNER JOIN booktype  as bt ON b.booktype_id=bt.booktype_id
-WHERE b.booktype_id=$booktype_id
+WHERE b.booktype_id=$booktype_id AND b.status=1
 ORDER BY b.book_id DESC";
 $result1 = mysqli_query($conn, $query1)or die ("Error in query: $query1
 query " . mysqli_error());
