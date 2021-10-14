@@ -78,6 +78,7 @@ $row_mb = mysqli_fetch_array($result_mb);
         <div class="form-group">
             <div class="col-sm-2"> </div>
             <div class="col-sm-12" align="right">
+                <input type="text" name="member_type" value="member">
                 <input type="hidden" name="member_id" value=" <?php echo $row_mb['member_id'];?>">
                 <button type="submit" class="btn btn-success btn-flat" id="btn"><span class="glyphicon glyphicon-saved"></span>
                     บันทึก

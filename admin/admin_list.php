@@ -18,6 +18,7 @@ $i=1;
             <th width="15%" class="text-nowrap" scope="col">ชื่อ</th>
             <th width="15%" class="text-nowrap" scope="col">username</th>
             <th width="15%" class="text-nowrap" scope="col">password</th>
+            <th width="15%" class="text-nowrap" scope="col">ระดับ</th>
             <th width="10%" scope="col">จัดการ</th>
         </tr>
     </thead>
@@ -28,6 +29,7 @@ $i=1;
         <td><?php echo $row_p['name']; ?></td>
         <td><?php echo $row_p['username']; ?></td>
         <td><?php echo $row_p['password']; ?></td>
+        <td><?php echo $row_p['level']; ?></td>
         <td>
             <div class="d-flex">
                 <a href="admin.php?act=edit&ID=<?php echo $row_p['admin_id']; ?>"

@@ -5,12 +5,13 @@ include('condb.php');
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	$name = $_POST['name'];
+	$level = $_POST['level'];
 	// echo '<pre>';
 	// print_r($_POST);
 	// echo '</pre>';
 	// exit;
 
-		$sql = "INSERT INTO  admin(username,password,name)VALUES('$username','$password','$name')";
+		$sql = "INSERT INTO  admin(username,password,name,level)VALUES('$username','$password','$name','$level')";
 		
 		$result = mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error());
 	

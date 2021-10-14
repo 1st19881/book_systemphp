@@ -5,10 +5,9 @@ include('condb.php');
 // print_r($_SESSION);
 // echo '</pre>';
 // exit;
-  $member_id = $_SESSION['member_id'];
-  $name = $_SESSION['name'];
+  $member_type = $_SESSION['member_type'];
 
- 	if($name==''){
+ 	if($member_type !='member'){
     Header("Location: ../index.php?act=login");  
   }  
 ?>

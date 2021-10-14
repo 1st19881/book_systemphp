@@ -6,9 +6,9 @@ include('condb.php');
 // echo '</pre>';
 // exit;
 
-  $name = $_SESSION['name'];
+  $level = $_SESSION['level'];
 
- 	if($name==''){
+ 	if($level !='admin'){
     Header("Location: ../index.php?act=login");  
   }  
 ?>

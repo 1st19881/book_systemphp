@@ -34,6 +34,7 @@
         <div class="form-group">
             <div class="col-sm-2"> </div>
             <div class="col-sm-12" align="right">
+                <input type="hidden" name="level" value="admin">
                 <button type="submit" class="btn btn-success btn-flat" id="btn"><span class="glyphicon glyphicon-saved"></span>
                     บันทึก
                 </button> <a href="admin.php" type="button" class="btn btn-danger btn-flat" id="btn"><span

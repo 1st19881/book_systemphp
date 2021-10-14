@@ -65,6 +65,7 @@
         <div class="form-group">
             <div class="col-sm-2"> </div>
             <div class="col-sm-12" align="right">
+                <input type="text" name="member_type" id="" value="member">
                 <button type="submit" class="btn btn-success btn-flat" id="btn"><span class="glyphicon glyphicon-saved"></span>
                     บันทึก
                 </button> <a href="member.php" type="button" class="btn btn-danger btn-flat" id="btn"><span

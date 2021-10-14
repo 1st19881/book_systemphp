@@ -13,6 +13,7 @@ date_default_timezone_set('Asia/Bangkok');
 	$price	 = $_POST['price'];
 	$author = $_POST['author'];
 	$year_of_publication = $_POST['year_of_publication'];
+	$member_id = $_POST['member_id'];
 //img
 	$img =(isset($_POST['img']) ? $_POST['img'] :'');
 	$upload=$_FILES['img']['name'];
@@ -33,9 +34,9 @@ date_default_timezone_set('Asia/Bangkok');
 	// echo '</pre>';
 	// exit;
 
-	$sql = "INSERT INTO  book(book_name,booktype_id,book_detail,author,booktype_id,price,year_of_publication,img)VALUES('$book_name','$booktype_id','$book_detail','$author','$price','$year_of_publication','$newname')";
+	$sql = "INSERT INTO  book(book_name,booktype_id,book_detail,author,booktype_id,price,year_of_publication,member_id,img)VALUES('$book_name','$booktype_id','$book_detail','$author','$price','$year_of_publication','$member_id','$newname')";
 	
-	$result = mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error());
+	$result = mysqli_query($conn, $sql) or die ("Error in query: $sql " . mysqli_error($sql));
 	
 	mysqli_close($conn);
 

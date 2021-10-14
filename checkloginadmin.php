@@ -27,7 +27,8 @@ session_start();
                       $row = mysqli_fetch_array($result);
                       $_SESSION["admin_id"] = $row["admin_id"];
                       $_SESSION["name"] = $row["name"];
-                      if($_SESSION["admin_id"] =="1"){ 
+                      $_SESSION["level"] = $row["level"];
+                      if($_SESSION["level"] =="admin"){ 
                         echo '
                         <script>
                         setTimeout(function() {
@@ -54,7 +55,7 @@ session_start();
                                 text: "ผิดพลาด กรุณาลองใหม่อีกครั้ง",
                                 type: "warning"
                             }, function() {
-                            window.location = "loginadmin.php";
+                            window.location = "index.php?act=loginadmin";
                         });
                         }, 100);
                     </script>
