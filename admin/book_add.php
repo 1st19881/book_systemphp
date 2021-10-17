@@ -4,9 +4,11 @@ include('condb.php');
 $query = "SELECT * FROM  booktype ORDER BY booktype_id asc" or die("Error:" . mysqli_error());
 $result = mysqli_query($conn, $query);
 
-$member_id = $_SESSION['admin_id'];
 
-
+// echo '<pre>';
+// 	print_r($_SESSION);
+// 	echo '</pre>';
+// 	exit;
 
 ?>
 <div class="col-md-12">
@@ -73,7 +75,8 @@ $member_id = $_SESSION['admin_id'];
         <div class="form-group">
             <div class="col-sm-2"> </div>
             <div class="col-sm-12" align="right">
-                <input type="text" name="member_id" value="<?php  echo $member_id;  ?>">
+                <input type="text" name="member_id" value="admin">
+                <input type="text" name="status" value="1">
                 <button type="submit" class="btn btn-success btn-flat" id="btn"><span class="glyphicon glyphicon-saved"></span>
                     บันทึก
                 </button> <a href="book.php" type="button" class="btn btn-danger btn-flat" id="btn"><span
